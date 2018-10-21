@@ -1,0 +1,107 @@
+body {
+    background-color: #414141;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 60px;
+    margin: 10px;
+ }
+
+header nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px;    
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.banner_top img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1%;
+}
+
+main section, aside {
+    margin: 5px;
+    text-align: center;
+}
+
+main section img {
+    width: 99%;
+}
+
+main section a {
+    text-decoration: none;
+    color: white;    
+}
+
+main section a:hover {
+    text-decoration: underline;
+}
+
+.three_articles, .four_articles, .a {
+    white-space: nowrap;    
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+.first_group  {
+    display: flex;     
+}
+
+.banner_aside img {
+    height: 100%;
+    width: 95%;    
+}
+
+.three_articles, .four_articles {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;     
+}
+
+.three_articles section {
+    width: 47%;
+}
+
+.three_articles section:first-child {
+    width: 99%;
+}
+
+.four_articles section {
+    width: 23%;    
+}
+
+@media (max-width: 600px) {
+    .banner_top, .banner_aside {
+        display: none;
+    }
+
+    .three_articles section, .four_articles section {
+        width: 99%;
+    }
+
+    header, nav a {
+        display: block;
+        text-align: center;
+    }
+}
+
+.footer_bottom {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px;    
+}
+
+
+
